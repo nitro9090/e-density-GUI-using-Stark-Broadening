@@ -1,5 +1,5 @@
 # e-density-GUI-using-Stark-Broadening
-An GUI for use in determining the electron density of a plasma using Stark Broadening
+A GUI for use in determining the electron density of a plasma using Stark Broadening
 
 This code takes in an absolutely calibrated optical emission spectrum from single spectral line input as a text file and 
 does a non-linear fit to the data to determine the electron density of a plasma based on how the line is stark broadened. 
