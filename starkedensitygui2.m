@@ -201,7 +201,9 @@ xlabel(handles.axes1,'Wavelength (nm)');
 
 VDWHWHM = Vanderwaalsbroad(centwavelength, handles.inputIonEh, handles.inputAlphah, handles.inputUpperEh, handles.inputUpperOQNh, handles.inputLowerEh, handles.inputLowerOQNh, handles.inputDensityh, handles.inputTgash,handles.inputRedMassh);
 
-starkbroad = fit(2) - VDWHWHM;
+starkbroadHWHM = fit(2) - VDWHWHM;
+
+starkEdensity = starkbroadHWHM/(fit(2)*10^-16);
 
 set(handles.calcdse,'string',fit(1))
 set(handles.calcwse,'string',fit(2))
@@ -219,8 +221,9 @@ set(handles.useDensity,'string',handles.inputDensityh)
 set(handles.usedTgas,'string',handles.inputTgash)
 set(handles.usedRedMass,'string',handles.inputRedMassh)
 
-set(handles.starkFWHM,'string',starkbroad)
+set(handles.starkFWHM,'string',starkbroadHWHM)
 set(handles.starkFWHMnoVDW,'string',fit(2))
+set(handles.starkDensity,'string',starkEdensity)
 
 
 % --- Executes on selection change in wavelengthmenu.
