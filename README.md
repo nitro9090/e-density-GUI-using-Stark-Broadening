@@ -27,3 +27,5 @@ profile is multiplied by this value to scale it to the graph) and gaussian HWHM 
 When you hit "start deconvoultion", the algorithm will only use values loaded into the "input values" section and will output the final values for each in the calculated/used section.  
 Hit the update manual parameters button to load any values in the manual input section in for the input values, all units 
 to be used are specified.  Note, only if a value is unchecked will it load a new value.
+
+this is a test
